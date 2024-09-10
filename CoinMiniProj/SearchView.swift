@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    
     var body: some View {
-        Text("서치뷰")
+        NavigationView {
+            VStack {
+                Text("서치뷰")
+                    .navigationTitle("Search")
+              
+            }
+        }
+      
+        
+        
     }
-}
-
-#Preview {
-    SearchView()
 }

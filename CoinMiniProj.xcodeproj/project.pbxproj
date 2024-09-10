@@ -12,6 +12,8 @@
 		8B3504402C8EE6320086D592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B35043F2C8EE6320086D592 /* Assets.xcassets */; };
 		8B3504432C8EE6320086D592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3504422C8EE6320086D592 /* Preview Assets.xcassets */; };
 		8B8012422C8FC84700E8AADD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8012412C8FC84700E8AADD /* SearchView.swift */; };
+		8B8012572C9029C900E8AADD /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8012562C9029C900E8AADD /* CoinModel.swift */; };
+		8B8012592C902CD200E8AADD /* CoinNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8012582C902CD200E8AADD /* CoinNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		8B35043F2C8EE6320086D592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3504422C8EE6320086D592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B8012412C8FC84700E8AADD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8B8012562C9029C900E8AADD /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		8B8012582C902CD200E8AADD /* CoinNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				8B35043F2C8EE6320086D592 /* Assets.xcassets */,
 				8B3504412C8EE6320086D592 /* Preview Content */,
 				8B8012412C8FC84700E8AADD /* SearchView.swift */,
+				8B8012562C9029C900E8AADD /* CoinModel.swift */,
+				8B8012582C902CD200E8AADD /* CoinNetwork.swift */,
 			);
 			path = CoinMiniProj;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8012572C9029C900E8AADD /* CoinModel.swift in Sources */,
 				8B35043E2C8EE6300086D592 /* ContentView.swift in Sources */,
+				8B8012592C902CD200E8AADD /* CoinNetwork.swift in Sources */,
 				8B8012422C8FC84700E8AADD /* SearchView.swift in Sources */,
 				8B35043C2C8EE6300086D592 /* CoinMiniProjApp.swift in Sources */,
 			);
