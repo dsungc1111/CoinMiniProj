@@ -60,6 +60,14 @@ struct ResultCoin: Hashable, Decodable {
     let name: String
     let symbol: String
     let thumb: String
+    var isLike = false
+    
+    enum CodingKeys: CodingKey {
+        case id
+        case name
+        case symbol
+        case thumb
+    }
 }
 
 struct SearchResult: Hashable, Decodable {

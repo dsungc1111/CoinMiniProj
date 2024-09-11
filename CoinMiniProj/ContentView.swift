@@ -108,7 +108,7 @@ struct ContentView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(.white)
-                                .frame(width: 290, height: 100)
+                                .frame(width: 290)
                             HStack {
                                 Text("\(index + 1)")
                                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -123,7 +123,7 @@ struct ContentView: View {
                                         ProgressView()
                                     case .success(let image):
                                         image
-                                    case .failure(let error):
+                                    case .failure(_):
                                         ProgressView()
                                     default:
                                         ProgressView()
@@ -224,6 +224,3 @@ struct MainView: View {
     }
 }
 
-#Preview {
-    MainView()
-}
