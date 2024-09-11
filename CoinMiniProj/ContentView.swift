@@ -62,7 +62,7 @@ struct ContentView: View {
                                 let image = URL(string: coinList.small)
                                 
                                 AsyncImage(url: image)
-                                VStack {
+                                VStack(alignment: .leading) {
                                     Text(coinList.name)
                                         .font(.system(size: 14))
                                     Text(coinList.symbol)
@@ -129,7 +129,7 @@ struct ContentView: View {
                                         ProgressView()
                                     }
                                 }
-                                VStack {
+                                VStack(alignment: .leading) {
                                     Text(coinList.name)
                                         .font(.system(size: 14))
                                     Text(coinList.symbol)
@@ -222,4 +222,8 @@ struct MainView: View {
         }
         .font(.headline)
     }
+}
+
+#Preview {
+    MainView()
 }

@@ -55,4 +55,13 @@ struct Coins: Hashable, Decodable {
 }
 
 
-//let dummy = Coins(coins: [Item(item: CoinItem(id: "", name: "", symbol: "", small: "", data: CoinDetail(price: 0.0, priceChange: CoinPriceChange(krw: 0.0))))])
+struct ResultCoin: Hashable, Decodable {
+    let id: String
+    let name: String
+    let symbol: String
+    let thumb: String
+}
+
+struct SearchResult: Hashable, Decodable {
+    let coins: [ResultCoin]
+}

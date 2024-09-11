@@ -36,15 +36,17 @@ class CoinNetwork {
         }.resume()
     }
     
-//    static func fetchCoin() async throws -> Coins {
-//        let url = URL(string: "https://api.coingecko.com/api/v3/search/trending")!
-//        
-//        let (data, response) = try await URLSession.shared.data(from: url)
-//        
-//        let decodeData = try JSONDecoder().decode(Coins.self, from: data)
-//        
-//        return decodeData
-//        
-//    }
+    static func fetchCoin(query: String) async throws -> SearchResult {
+        let url = URL(string: "https://api.coingecko.com/api/v3/search?query=\(query)")!
+        
+        print(url)
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        let decodeData = try JSONDecoder().decode(SearchResult.self, from: data)
+        
+        return decodeData
+        
+    }
     
 }
